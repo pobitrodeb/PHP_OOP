@@ -2,6 +2,11 @@
 class Book {
     public $bookName; 
 
+    function __construct()
+    {
+       $this->bookName = 'PHP Web Programing';
+    }
+
     function bookName()
     {
         echo "This book name is : {$this->bookName}"; 
@@ -9,5 +14,6 @@ class Book {
  }
 
  $book = new Book(); 
- $book->bookName = 'PHP Web Programing'; 
- echo $book->bookName;
+ echo $book->bookName; 
+
+ 
