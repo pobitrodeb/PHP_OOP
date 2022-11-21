@@ -11,6 +11,11 @@ class Book {
     {
         echo "This book name is : {$this->bookName}"; 
     }
+
+    function __destruct()
+    {
+        echo " '<br/>' All Work Have Been Done ";
+    }
  }
 
  $book = new Book(); 
