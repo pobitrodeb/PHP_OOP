@@ -33,8 +33,22 @@ class Modarator {
         echo $this->playrName;     
        
     }
+
+// Protectet Access 
+    protected function text(){
+        echo 'this is proectect function'; 
+    }
+
+    public function text2()
+    {
+        echo $this->text();  // call to protect function 
+    }
 }
 
 $modarator  = new Modarator();
 echo '<br/>'; 
 $modarator->getModarator();
+
+echo '<br/>'; 
+$text2 = new Modarator(); 
+$text2->text2();
