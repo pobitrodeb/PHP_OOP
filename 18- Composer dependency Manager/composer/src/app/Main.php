@@ -4,7 +4,7 @@ namespace App;
 
 class Main {
 
-    public function congratualtions(Type $var = null)
+    public function congratualtions()
     {
         echo 'Congratulations on your success'; 
     }
